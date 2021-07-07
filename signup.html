@@ -19,7 +19,72 @@
         </nav>
         <br>
     </header>
+    <main>
+        <form action="mainPage.html" method="GET">
             <div>
+                <div>
+                <label for="firstName">Enter First Name</label>
+                </div>
+                <div>
+                <input type="text" id="firstName" name="firstName" required >
+                </div>
+            </div>
+            <div>
+                <div>
+                <label for="lastName">Enter Last Name</label>
+                </div>
+                <div>
+                <input type="text" id="lastName" name="lastName" required >
+                </div>
+            </div>
+            <div>
+                    <label for="password">Enter Password</label>
+                    <input type="password" id="password" name="password" required >
+            </div>
+            <div>
+                    <label for="rePassword">Re-Enter Password</label>
+                    <input type="password" id="rePassword" name="rePassword" required >
+            </div>
+            <div>
+                <label for="province">Select Canadian Province</label>
+                <select name="province" id="province">
+                    <option value="Ontario">Ontario</option>
+                    <option value="Quebec">Quebec</option>
+                    <option value="Albert">Albert</option>
+                    <option value="Manitoba">Manitoba</option>
+                    <option value="British Columbia">British Columbia</option>
+                    <option value="Saskatchewan"> Saskatchewan</option>
+                    <option value="Nova Scotia"> Nova Scotia</option>
+                    <option value="Prince Edward Island"> Prince Edward Island</option>
+                    <option value="Newfoundland and Labrador"> Newfoundland and Labrador</option>
+                    <option value="New Brunswick"> New Brunswick</option>
+                </select>
+            </div>
+            <div>
+                Select Pronouns:
+                &lt&gt
+                <label for="He"> He/Him </label>
+                <input type="radio" id="He" value="He/Him" name="pronouns"  >
+
+                <label for="She"> She/Her </label>
+                <input type="radio" id="She" value="She/Her" name="pronouns" >
+
+                <label for="They"> They/Them </label>
+                <input type="radio" id="They" value="They/Them" name="pronouns"checked >
+            </div>
+            <div><label for="birthday">Select Date Of Birth</label>
+                <input type="date" id="birthday" name="birthday" max="2003-12-31" required>
+            </div>
+            <div>
+                <label for="newsLetters"> Would you like to receive weekly news letters or updates?</label>
+                <input type="checkbox" id="newsLetters" name="newsLetters">
+            </div>
+            <div>
+                <button type="reset"> Reset</button>
+                <button type="submit"> Submit</button>
+            </div>
+        </form>
+    </main>
     <footer></footer>
 </body>
 </html>
