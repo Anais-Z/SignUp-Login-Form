@@ -7,7 +7,36 @@
     <title>Document</title>
 </head>
 <body>
-    test1
-    <!--comment-->
+    <header>
+        <nav>
+            <div> HOME</div>
+        </nav>
+        <br>
+    </header>
+
+    <main>
+        <form action="GET">
+                <p>Log In</p>
+                <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                <div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                </div>
+                <div><label for="remember"> Remember Me</label>
+                    <input type="radio" id="remember" name="remember" value="true">
+                </div>
+                <div>
+                    <button type="reset"> Reset</button>
+                    <button type="submit"> Submit</button>
+                </div>
+        </form>
+    </main>
+    <footer>
+        <p> Don't have an account?</p>
+        <p> <a href=""> Sign Up</a></p>
+    </footer>
 </body>
 </html>
