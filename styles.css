@@ -99,3 +99,18 @@ a + a{
 .signUpForm{
     height: 700px
 }
+.hello{
+    display: flex;
+    height: 700px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.helloUser{
+    font-size: 70px;
+}
+
+.helloUser:hover{
+    color: rgb(60, 240, 15);
+}
