@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -20,7 +21,9 @@
         <br>
     </header>
     <main>
-        <form action="mainPage.html" method="GET">
+        
+        <form class="theForm signUpForm" action="mainPage.html" method="GET">
+                <p id="red"> Sign Up </p>
             <div>
                 <div>
                 <label for="firstName">Enter First Name</label>
@@ -38,15 +41,27 @@
                 </div>
             </div>
             <div>
+                <div>
                     <label for="password">Enter Password</label>
+                </div>
+                <div>
                     <input type="password" id="password" name="password" required >
+                </div>
             </div>
             <div>
+                <div>
                     <label for="rePassword">Re-Enter Password</label>
+                </div>
+                <div>
                     <input type="password" id="rePassword" name="rePassword" required >
+                </div>
             </div>
             <div>
+                <div>
                 <label for="province">Select Canadian Province</label>
+                </div>
+
+                <div>
                 <select name="province" id="province">
                     <option value="Ontario">Ontario</option>
                     <option value="Quebec">Quebec</option>
@@ -59,10 +74,11 @@
                     <option value="Newfoundland and Labrador"> Newfoundland and Labrador</option>
                     <option value="New Brunswick"> New Brunswick</option>
                 </select>
+                </div>
             </div>
             <div>
-                Select Pronouns:
-                &lt&gt
+                <a>Select Pronouns:</a>
+                <a>&lt&gt</a>
                 <label for="He"> He/Him </label>
                 <input type="radio" id="He" value="He/Him" name="pronouns"  >
 
@@ -72,7 +88,8 @@
                 <label for="They"> They/Them </label>
                 <input type="radio" id="They" value="They/Them" name="pronouns"checked >
             </div>
-            <div><label for="birthday">Select Date Of Birth</label>
+            <div>
+                <label for="birthday">Select Date Of Birth</label>
                 <input type="date" id="birthday" name="birthday" max="2003-12-31" required>
             </div>
             <div>
@@ -80,8 +97,8 @@
                 <input type="checkbox" id="newsLetters" name="newsLetters">
             </div>
             <div>
-                <button type="reset"> Reset</button>
-                <button type="submit"> Submit</button>
+                <button class="reset" type="reset"> Reset</button>
+                <button class="submit" type="submit"> Submit</button>
             </div>
         </form>
     </main>

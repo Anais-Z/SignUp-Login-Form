@@ -81,3 +81,21 @@ header div:hover{
 label, p{
     color: rgb(222, 222, 248)
 }
+
+div > a{
+    color: rgb(245, 147, 237);
+    font-weight: bold;
+}
+a + a{
+    visibility: hidden;
+}
+
+#red{
+    font-family: cursive;
+    font-size: 50px;
+    color: rgb(255, 174, 0)
+}
+
+.signUpForm{
+    height: 700px
+}

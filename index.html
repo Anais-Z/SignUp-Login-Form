@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,22 +16,27 @@
     </header>
 
     <main>
-        <form action="GET">
+        <form class="theForm" action="mainPage.html">
                 <p>Log In</p>
-                <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter Email" required>
-                <div>
+
+                <div class="div1">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                </div>
+
                 <div>
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" placeholder="Enter Password" required>
                 </div>
-                <div><label for="remember"> Remember Me</label>
+
+                <div>
+                    <label for="remember"> Remember Me</label>
                     <input type="radio" id="remember" name="remember" value="true">
                 </div>
+
                 <div>
-                    <button type="reset"> Reset</button>
-                    <button type="submit"> Submit</button>
+                    <button class="reset" type="reset"> Reset</button>
+                    <button class="submit" type="submit"> Submit</button>
                 </div>
         </form>
     </main>
